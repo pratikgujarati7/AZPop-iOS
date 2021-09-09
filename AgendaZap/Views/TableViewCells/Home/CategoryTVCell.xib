@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CategoryTVCell" customModule="AgendaZap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdk-Dy-hBj">
+                        <rect key="frame" x="8" y="8" width="304" height="134"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comer e Beber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMi-ql-h3f">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="BNb-90-s2f">
+                                <rect key="frame" x="0.0" y="24" width="304" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="gbh-3Y-9sO">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NMi-ql-h3f" firstAttribute="top" secondItem="rdk-Dy-hBj" secondAttribute="top" id="8Ta-J6-fYO"/>
+                            <constraint firstItem="NMi-ql-h3f" firstAttribute="leading" secondItem="rdk-Dy-hBj" secondAttribute="leading" id="ENs-AF-AWe"/>
+                            <constraint firstAttribute="trailing" secondItem="BNb-90-s2f" secondAttribute="trailing" id="MgK-xs-5cY"/>
+                            <constraint firstItem="BNb-90-s2f" firstAttribute="leading" secondItem="rdk-Dy-hBj" secondAttribute="leading" id="Ty9-Rw-wJ4"/>
+                            <constraint firstAttribute="bottom" secondItem="BNb-90-s2f" secondAttribute="bottom" id="Wmd-Mb-bIB"/>
+                            <constraint firstAttribute="trailing" secondItem="NMi-ql-h3f" secondAttribute="trailing" id="mOA-iu-f7b"/>
+                            <constraint firstItem="BNb-90-s2f" firstAttribute="top" secondItem="NMi-ql-h3f" secondAttribute="bottom" id="q7m-uY-DY1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rdk-Dy-hBj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GwY-UQ-4vq"/>
+                    <constraint firstAttribute="bottom" secondItem="rdk-Dy-hBj" secondAttribute="bottom" constant="8" id="O0M-Ep-w10"/>
+                    <constraint firstAttribute="trailing" secondItem="rdk-Dy-hBj" secondAttribute="trailing" constant="8" id="ZBI-2p-TqC"/>
+                    <constraint firstItem="rdk-Dy-hBj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="mC5-Pj-qfo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collSubCategories" destination="BNb-90-s2f" id="D7A-R2-DVY"/>
+                <outlet property="lblCatName" destination="NMi-ql-h3f" id="26N-vt-hFg"/>
+                <outlet property="viewContainer" destination="rdk-Dy-hBj" id="3gs-2k-4Av"/>
+            </connections>
+            <point key="canvasLocation" x="-500.00000000000006" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

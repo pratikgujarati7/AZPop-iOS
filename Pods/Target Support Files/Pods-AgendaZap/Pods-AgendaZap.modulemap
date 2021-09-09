@@ -1,0 +1,6 @@
+framework module Pods_AgendaZap {
+  umbrella header "Pods-AgendaZap-umbrella.h"
+
+  export *
+  module * { export * }
+}

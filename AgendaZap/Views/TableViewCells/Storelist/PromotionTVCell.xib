@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Bold.otf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PromotionTVCell" customModule="AgendaZap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uze-L6-0Uo">
+                        <rect key="frame" x="10" y="5" width="300" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xie-FO-owh">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="16"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZV4-Gz-JNf">
+                                <rect key="frame" x="0.0" y="24" width="300" height="15"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                <color key="textColor" name="Color4_LightGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nM-63-bIm" customClass="UIButtonX" customModule="AgendaZap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6vz-8B-LxM"/>
+                                    <constraint firstAttribute="width" constant="100" id="nvN-wO-ckn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                <state key="normal" title="Ver Detalhes">
+                                    <color key="titleColor" name="Color1_ThemeBlack"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSeeDetailsAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7Nl-Sc-39H"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGU-B9-Cjz" customClass="UIViewX" customModule="AgendaZap" customModuleProvider="target">
+                                <rect key="frame" x="110" y="49" width="119" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oR-1s-KXJ">
+                                        <rect key="frame" x="10" y="5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="IKi-u9-hdN"/>
+                                            <constraint firstAttribute="height" constant="30" id="TfY-hh-vze"/>
+                                        </constraints>
+                                        <state key="normal" image="whatsapp"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whatsapp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA2-pq-7lk">
+                                        <rect key="frame" x="45" y="5" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" name="Color6_WPGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC5-rE-FNh">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="40"/>
+                                        <connections>
+                                            <action selector="btnWhatsappAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M33-1n-jH1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3oR-1s-KXJ" secondAttribute="bottom" constant="5" id="72I-88-0XR"/>
+                                    <constraint firstItem="3oR-1s-KXJ" firstAttribute="leading" secondItem="dGU-B9-Cjz" secondAttribute="leading" constant="10" id="9rF-2j-K5A"/>
+                                    <constraint firstItem="PA2-pq-7lk" firstAttribute="leading" secondItem="3oR-1s-KXJ" secondAttribute="trailing" constant="5" id="D7F-qq-reF"/>
+                                    <constraint firstAttribute="bottom" secondItem="PA2-pq-7lk" secondAttribute="bottom" constant="5" id="DRf-hS-cDN"/>
+                                    <constraint firstItem="ZC5-rE-FNh" firstAttribute="top" secondItem="dGU-B9-Cjz" secondAttribute="top" id="EAC-xd-oKl"/>
+                                    <constraint firstItem="ZC5-rE-FNh" firstAttribute="leading" secondItem="dGU-B9-Cjz" secondAttribute="leading" id="I9t-ev-1Fx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZC5-rE-FNh" secondAttribute="trailing" id="R65-j4-Trs"/>
+                                    <constraint firstItem="3oR-1s-KXJ" firstAttribute="top" secondItem="dGU-B9-Cjz" secondAttribute="top" constant="5" id="VrB-6K-pDH"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZC5-rE-FNh" secondAttribute="bottom" id="WqH-9c-c6l"/>
+                                    <constraint firstAttribute="trailing" secondItem="PA2-pq-7lk" secondAttribute="trailing" constant="10" id="h3R-x6-aHr"/>
+                                    <constraint firstItem="PA2-pq-7lk" firstAttribute="top" secondItem="dGU-B9-Cjz" secondAttribute="top" constant="5" id="iNg-4w-S9G"/>
+                                    <constraint firstAttribute="height" constant="40" id="x8x-tS-GYk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Color6_WPGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcU-18-zLg">
+                                <rect key="frame" x="0.0" y="98" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ukx-ap-5uK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1nM-63-bIm" firstAttribute="leading" secondItem="uze-L6-0Uo" secondAttribute="leading" id="2gm-lT-Qes"/>
+                            <constraint firstItem="xie-FO-owh" firstAttribute="leading" secondItem="uze-L6-0Uo" secondAttribute="leading" id="8MA-cC-NaZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xie-FO-owh" secondAttribute="trailing" id="B3N-Mw-1bu"/>
+                            <constraint firstItem="dGU-B9-Cjz" firstAttribute="top" secondItem="1nM-63-bIm" secondAttribute="top" id="FuC-f2-OZc"/>
+                            <constraint firstItem="dGU-B9-Cjz" firstAttribute="leading" secondItem="1nM-63-bIm" secondAttribute="trailing" constant="10" id="FwV-st-phB"/>
+                            <constraint firstAttribute="bottom" secondItem="1nM-63-bIm" secondAttribute="bottom" constant="10" id="OCP-cY-TN9"/>
+                            <constraint firstItem="dGU-B9-Cjz" firstAttribute="bottom" secondItem="1nM-63-bIm" secondAttribute="bottom" id="Yvf-6X-fYJ"/>
+                            <constraint firstAttribute="bottom" secondItem="AcU-18-zLg" secondAttribute="bottom" id="dlW-St-nSb"/>
+                            <constraint firstAttribute="trailing" secondItem="AcU-18-zLg" secondAttribute="trailing" id="ess-nM-vbs"/>
+                            <constraint firstAttribute="trailing" secondItem="ZV4-Gz-JNf" secondAttribute="trailing" id="iI4-xQ-Vql"/>
+                            <constraint firstItem="xie-FO-owh" firstAttribute="top" secondItem="uze-L6-0Uo" secondAttribute="top" id="n9x-It-rkO"/>
+                            <constraint firstItem="ZV4-Gz-JNf" firstAttribute="leading" secondItem="uze-L6-0Uo" secondAttribute="leading" id="o00-HZ-Rim"/>
+                            <constraint firstItem="ZV4-Gz-JNf" firstAttribute="top" secondItem="xie-FO-owh" secondAttribute="bottom" constant="8" id="pfQ-Ih-cC2"/>
+                            <constraint firstItem="AcU-18-zLg" firstAttribute="leading" secondItem="uze-L6-0Uo" secondAttribute="leading" id="phg-vP-I9y"/>
+                            <constraint firstItem="1nM-63-bIm" firstAttribute="top" secondItem="ZV4-Gz-JNf" secondAttribute="bottom" constant="10" id="x32-pJ-No8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uze-L6-0Uo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9ec-0f-hqg"/>
+                    <constraint firstAttribute="trailing" secondItem="uze-L6-0Uo" secondAttribute="trailing" constant="10" id="gUe-mE-tcc"/>
+                    <constraint firstItem="uze-L6-0Uo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lCd-Ng-pAe"/>
+                    <constraint firstAttribute="bottom" secondItem="uze-L6-0Uo" secondAttribute="bottom" constant="5" id="xV9-3V-9at"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSeeDetails" destination="1nM-63-bIm" id="neN-WE-h3Z"/>
+                <outlet property="btnWhatsapp" destination="3oR-1s-KXJ" id="Cfe-de-V2j"/>
+                <outlet property="lblDescription" destination="ZV4-Gz-JNf" id="e82-gW-7BE"/>
+                <outlet property="lblName" destination="xie-FO-owh" id="RvF-Lg-4SR"/>
+                <outlet property="lblWhatsapp" destination="PA2-pq-7lk" id="50x-kX-Pet"/>
+                <outlet property="viewWhatsappContainer" destination="dGU-B9-Cjz" id="6Do-wI-SHA"/>
+            </connections>
+            <point key="canvasLocation" x="136.23188405797103" y="76.674107142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="1nM-63-bIm">
+            <size key="intrinsicContentSize" width="79" height="29"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="whatsapp" width="256" height="256"/>
+        <namedColor name="Color1_ThemeBlack">
+            <color red="0.13333333333333333" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color4_LightGrey">
+            <color red="0.69803921568627447" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color6_WPGreenColor">
+            <color red="0.28627450980392155" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

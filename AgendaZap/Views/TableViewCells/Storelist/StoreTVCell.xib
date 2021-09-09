@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MyriadPro-Bold.otf">
+            <string>MyriadPro-Bold</string>
+        </array>
+        <array key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="StoreTVCell" customModule="AgendaZap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj7-A2-lFh">
+                        <rect key="frame" x="10" y="5" width="300" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG9-b8-ot9">
+                                <rect key="frame" x="5" y="8" width="83" height="16"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hah-zg-UN2" customClass="UIViewX" customModule="AgendaZap" customModuleProvider="target">
+                                <rect key="frame" x="93" y="6" width="37.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em Alta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-V9-fha">
+                                        <rect key="frame" x="5" y="0.0" width="27.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Color3_LightGreen"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JHA-V9-fha" secondAttribute="trailing" constant="5" id="5W4-OL-dRb"/>
+                                    <constraint firstAttribute="bottom" secondItem="JHA-V9-fha" secondAttribute="bottom" id="9ya-Iz-qJY"/>
+                                    <constraint firstAttribute="height" constant="20" id="kzL-K1-DNE"/>
+                                    <constraint firstItem="JHA-V9-fha" firstAttribute="top" secondItem="Hah-zg-UN2" secondAttribute="top" id="tVl-8Y-vBb"/>
+                                    <constraint firstItem="JHA-V9-fha" firstAttribute="leading" secondItem="Hah-zg-UN2" secondAttribute="leading" constant="5" id="uL5-R7-Fcq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfi-HY-nkd" customClass="UIViewX" customModule="AgendaZap" customModuleProvider="target">
+                                <rect key="frame" x="135.5" y="6" width="60" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrega grátis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofY-b3-R9K">
+                                        <rect key="frame" x="5" y="0.0" width="50" height="20"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Color6_WPGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="ofY-b3-R9K" firstAttribute="leading" secondItem="kfi-HY-nkd" secondAttribute="leading" constant="5" id="HSw-XP-GDw"/>
+                                    <constraint firstItem="ofY-b3-R9K" firstAttribute="top" secondItem="kfi-HY-nkd" secondAttribute="top" id="aEK-F3-XZt"/>
+                                    <constraint firstAttribute="bottom" secondItem="ofY-b3-R9K" secondAttribute="bottom" id="aec-mU-nWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ofY-b3-R9K" secondAttribute="trailing" constant="5" id="dZt-iE-ut3"/>
+                                    <constraint firstAttribute="height" constant="20" id="fDW-Pm-Kgy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premium_check" translatesAutoresizingMaskIntoConstraints="NO" id="yFi-lf-jw1">
+                                <rect key="frame" x="200.5" y="8.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3Jw-qn-8sz"/>
+                                    <constraint firstAttribute="width" constant="15" id="Yoc-Vn-tif"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJy-ed-zT8">
+                                <rect key="frame" x="255" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yJy-ed-zT8" secondAttribute="height" multiplier="1:1" id="A2G-cz-xWh"/>
+                                    <constraint firstAttribute="height" constant="40" id="T7J-vh-CJ3"/>
+                                </constraints>
+                                <state key="normal" image="whatsapp"/>
+                                <connections>
+                                    <action selector="btnWhatsappAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7c5-8P-BiB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2m-3A-6nF" customClass="UIButtonX" customModule="AgendaZap" customModuleProvider="target">
+                                <rect key="frame" x="5" y="32" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="T9R-1T-1KE"/>
+                                    <constraint firstAttribute="height" constant="30" id="hXg-gQ-ims"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                <state key="normal" title="Ver Perfil">
+                                    <color key="titleColor" name="Color1_ThemeBlack"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnViewProfileAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xkA-Z3-eLD"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dn6-Yk-d36">
+                                <rect key="frame" x="95" y="32" width="92.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ua-pq-khM">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" name="Color4_LightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLa-iU-jTA">
+                                        <rect key="frame" x="44" y="0.0" width="48.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                        <color key="textColor" name="Color4_LightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HrJ-b6-oN3">
+                                <rect key="frame" x="0.0" y="71" width="300" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="joK-hI-SwE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="SG9-b8-ot9" firstAttribute="top" secondItem="Fj7-A2-lFh" secondAttribute="top" constant="8" id="2fh-L9-wuM"/>
+                            <constraint firstItem="Q2m-3A-6nF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SG9-b8-ot9" secondAttribute="bottom" constant="8" id="3hK-AO-Zgc"/>
+                            <constraint firstItem="kfi-HY-nkd" firstAttribute="leading" secondItem="Hah-zg-UN2" secondAttribute="trailing" constant="5" id="3zK-3X-5vT"/>
+                            <constraint firstItem="HrJ-b6-oN3" firstAttribute="leading" secondItem="Fj7-A2-lFh" secondAttribute="leading" id="4OB-rw-fKG"/>
+                            <constraint firstAttribute="trailing" secondItem="yJy-ed-zT8" secondAttribute="trailing" constant="5" id="9bO-WY-DCT"/>
+                            <constraint firstItem="dn6-Yk-d36" firstAttribute="height" secondItem="Q2m-3A-6nF" secondAttribute="height" id="EMF-JB-Hea"/>
+                            <constraint firstItem="dn6-Yk-d36" firstAttribute="leading" secondItem="Q2m-3A-6nF" secondAttribute="trailing" constant="10" id="JKj-Mn-khC"/>
+                            <constraint firstAttribute="bottom" secondItem="HrJ-b6-oN3" secondAttribute="bottom" id="LeS-3f-0FW"/>
+                            <constraint firstAttribute="trailing" secondItem="HrJ-b6-oN3" secondAttribute="trailing" id="Oeb-q6-l4P"/>
+                            <constraint firstItem="Hah-zg-UN2" firstAttribute="leading" secondItem="SG9-b8-ot9" secondAttribute="trailing" constant="5" id="SuL-WL-mVi"/>
+                            <constraint firstItem="yFi-lf-jw1" firstAttribute="leading" secondItem="kfi-HY-nkd" secondAttribute="trailing" constant="5" id="ehZ-Bu-NJH"/>
+                            <constraint firstItem="dn6-Yk-d36" firstAttribute="centerY" secondItem="Q2m-3A-6nF" secondAttribute="centerY" id="gp3-4X-HaV"/>
+                            <constraint firstItem="yFi-lf-jw1" firstAttribute="centerY" secondItem="SG9-b8-ot9" secondAttribute="centerY" id="hAz-Q4-aBK"/>
+                            <constraint firstAttribute="bottom" secondItem="Q2m-3A-6nF" secondAttribute="bottom" constant="10" id="n4Z-69-Ncj"/>
+                            <constraint firstItem="Hah-zg-UN2" firstAttribute="centerY" secondItem="SG9-b8-ot9" secondAttribute="centerY" id="nqo-QN-SxW"/>
+                            <constraint firstItem="SG9-b8-ot9" firstAttribute="leading" secondItem="Fj7-A2-lFh" secondAttribute="leading" constant="5" id="riM-gc-jrc"/>
+                            <constraint firstItem="yJy-ed-zT8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dn6-Yk-d36" secondAttribute="trailing" constant="8" id="rxC-zl-xFR"/>
+                            <constraint firstItem="yJy-ed-zT8" firstAttribute="centerY" secondItem="Fj7-A2-lFh" secondAttribute="centerY" id="sVa-2N-3Fg"/>
+                            <constraint firstItem="kfi-HY-nkd" firstAttribute="centerY" secondItem="SG9-b8-ot9" secondAttribute="centerY" id="uKC-cy-KzZ"/>
+                            <constraint firstItem="yJy-ed-zT8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yFi-lf-jw1" secondAttribute="trailing" constant="5" id="vK0-f9-oPE"/>
+                            <constraint firstItem="Q2m-3A-6nF" firstAttribute="leading" secondItem="Fj7-A2-lFh" secondAttribute="leading" constant="5" id="waL-uY-SPh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fj7-A2-lFh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HqH-NE-Mal"/>
+                    <constraint firstAttribute="trailing" secondItem="Fj7-A2-lFh" secondAttribute="trailing" constant="10" id="Okg-wf-TUZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Fj7-A2-lFh" secondAttribute="bottom" constant="5" id="gZF-T9-8JI"/>
+                    <constraint firstItem="Fj7-A2-lFh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uAw-dN-H6g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnViewProfile" destination="Q2m-3A-6nF" id="KMU-8u-t0K"/>
+                <outlet property="btnWhatsapp" destination="yJy-ed-zT8" id="pMt-kj-Krz"/>
+                <outlet property="imageViewIsVerified" destination="yFi-lf-jw1" id="s6R-iH-9Z1"/>
+                <outlet property="lblCategoryType" destination="TLa-iU-jTA" id="Seh-AW-ia4"/>
+                <outlet property="lblDistance" destination="8ua-pq-khM" id="Rie-A1-FIj"/>
+                <outlet property="lblFreeDelivery" destination="ofY-b3-R9K" id="Hlc-nk-ITg"/>
+                <outlet property="lblPriority" destination="JHA-V9-fha" id="pPY-qs-63r"/>
+                <outlet property="lblStoreName" destination="SG9-b8-ot9" id="QLD-Fq-sVm"/>
+                <outlet property="viewFreeDeliveryContainer" destination="kfi-HY-nkd" id="FzS-xX-AfD"/>
+                <outlet property="viewPriorityContainer" destination="Hah-zg-UN2" id="GOp-SP-utB"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="67.633928571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Q2m-3A-6nF">
+            <size key="intrinsicContentSize" width="52" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="premium_check" width="1066.5" height="1066.5"/>
+        <image name="whatsapp" width="256" height="256"/>
+        <namedColor name="Color1_ThemeBlack">
+            <color red="0.13333333333333333" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color3_LightGreen">
+            <color red="0.9137254901960784" green="0.7686274509803922" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color4_LightGrey">
+            <color red="0.69803921568627447" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color6_WPGreenColor">
+            <color red="0.28627450980392155" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

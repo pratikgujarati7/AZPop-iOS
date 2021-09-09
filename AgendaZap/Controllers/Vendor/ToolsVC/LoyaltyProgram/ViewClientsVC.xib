@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewClientsVC" customModule="AgendaZap" customModuleProvider="target">
+            <connections>
+                <outlet property="lblNavigationTitle" destination="o0V-81-7PR" id="kQN-rG-uJL"/>
+                <outlet property="spreadsheetView" destination="4gG-I9-ZO1" id="gFe-Oo-qoN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewNavigation" destination="52n-dY-cy7" id="8Qb-M9-KCn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-wN-fQN">
+                    <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gG-I9-ZO1" customClass="SpreadsheetView">
+                            <rect key="frame" x="10" y="10" width="394" height="777"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="Color2_ThemeBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4gG-I9-ZO1" secondAttribute="trailing" constant="10" id="01F-bx-0lQ"/>
+                        <constraint firstAttribute="bottom" secondItem="4gG-I9-ZO1" secondAttribute="bottom" id="Qvu-lC-2Ur"/>
+                        <constraint firstItem="4gG-I9-ZO1" firstAttribute="top" secondItem="2M7-wN-fQN" secondAttribute="top" constant="10" id="Tge-K4-fe5"/>
+                        <constraint firstItem="4gG-I9-ZO1" firstAttribute="leading" secondItem="2M7-wN-fQN" secondAttribute="leading" constant="10" id="qUo-gP-tan"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52n-dY-cy7">
+                    <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clientes Com Mais Compras" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-81-7PR">
+                            <rect key="frame" x="91" y="22.5" width="232" height="20.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJe-xt-YV8">
+                            <rect key="frame" x="8" y="10.5" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="IJe-xt-YV8" secondAttribute="height" multiplier="1:1" id="DFM-Gn-a0o"/>
+                                <constraint firstAttribute="height" constant="44" id="s8V-hv-dTl"/>
+                            </constraints>
+                            <state key="normal" image="back_white"/>
+                            <connections>
+                                <action selector="btnBackTapped:" destination="-1" eventType="touchUpInside" id="le3-IX-NRY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Color1_ThemeBlack"/>
+                    <constraints>
+                        <constraint firstItem="o0V-81-7PR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IJe-xt-YV8" secondAttribute="trailing" constant="8" id="53h-YL-s0s"/>
+                        <constraint firstItem="o0V-81-7PR" firstAttribute="centerY" secondItem="52n-dY-cy7" secondAttribute="centerY" id="6PC-fM-gZn"/>
+                        <constraint firstItem="o0V-81-7PR" firstAttribute="centerX" secondItem="52n-dY-cy7" secondAttribute="centerX" id="Bbz-wV-iGi"/>
+                        <constraint firstItem="IJe-xt-YV8" firstAttribute="leading" secondItem="52n-dY-cy7" secondAttribute="leading" constant="8" id="FXZ-ZU-VAL"/>
+                        <constraint firstAttribute="height" constant="65" id="dqo-0i-NZO"/>
+                        <constraint firstItem="IJe-xt-YV8" firstAttribute="centerY" secondItem="52n-dY-cy7" secondAttribute="centerY" id="fOc-tI-pkI"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="o0V-81-7PR" secondAttribute="trailing" constant="8" id="j3q-nn-vEL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Color1_ThemeBlack"/>
+            <constraints>
+                <constraint firstItem="52n-dY-cy7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="O7V-Dv-sny"/>
+                <constraint firstItem="2M7-wN-fQN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QgL-1N-kCj"/>
+                <constraint firstAttribute="bottom" secondItem="2M7-wN-fQN" secondAttribute="bottom" id="TBd-mg-psx"/>
+                <constraint firstItem="2M7-wN-fQN" firstAttribute="top" secondItem="52n-dY-cy7" secondAttribute="bottom" id="WBO-ci-nSY"/>
+                <constraint firstItem="2M7-wN-fQN" firstAttribute="top" secondItem="52n-dY-cy7" secondAttribute="bottom" id="Yar-08-wKT"/>
+                <constraint firstItem="52n-dY-cy7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ajA-F3-Vq7"/>
+                <constraint firstItem="2M7-wN-fQN" firstAttribute="top" secondItem="52n-dY-cy7" secondAttribute="bottom" id="b1j-Sz-kG2"/>
+                <constraint firstItem="2M7-wN-fQN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xZl-jY-KjJ"/>
+                <constraint firstItem="52n-dY-cy7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yOe-rb-sns"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_white" width="29" height="29"/>
+        <namedColor name="Color1_ThemeBlack">
+            <color red="0.13333333333333333" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color2_ThemeBackground">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
